@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
 import './index.scss'
-
+import ReactPlayer from 'react-player'
+import video from '../../assets/images/valentin.mp4'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -69,7 +71,6 @@ const Home = () => {
           </div>
           <Logo />
         </div>
-  
         <Loader type="pacman" />
       </>
     )
